@@ -33,8 +33,7 @@ while True:
     if user_input.lower() == "quit":
         print("Bye!")
         break
-    conversation.ap
-    pend({"role": "user", "content": user_input})
+    conversation.append({"role": "user", "content": user_input})
     response = generate_response(user_input, conversation)
     print(f"AI: {response}")
     conversation.append({"role": "assistant", "content": response})
