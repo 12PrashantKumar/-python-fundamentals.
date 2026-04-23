@@ -33,3 +33,4 @@ for student in students:
     print(student["name"])
     for subject, mark in student["marks_dict"].items():
         print(f"  {subject}: {mark}")
+
