@@ -19,7 +19,7 @@ load_dotenv()  # Load environment variables from .env file
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 
-def generate_response(user_message,history):
+def generate_response(user_message):
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         contents = user_message,
