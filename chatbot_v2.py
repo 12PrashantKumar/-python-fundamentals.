@@ -33,7 +33,7 @@ def save_conversation(conversation, filename="chat_log.json"):
 
 def main():
     conversation = []
-    print("Chatbot v2hey --type 'quit' to exit")
+    print("Chatbot v2  --type 'quit' to exit")
     while True:
         try:
             user_message = input("You: ")
@@ -42,7 +42,7 @@ def main():
                 save_conversation(conversation)
                 break
             conversation.append({"role": "user", "content": user_message})
-            response = generate_response(user_message, conversation)
+            response = generate_response(user_message)
             conversation.append({"role": "assistant", "content": response})
             print(f"AI: {response}")
         except Exception as e:
