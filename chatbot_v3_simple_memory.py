@@ -22,7 +22,7 @@ while True:
         continue
 
     try:
-        response = chat.send_message(user_input)
+        response = chat.send_message(user_input)        
         print(f"AI: {response.text}")
     except Exception as e:
         print(f"Something went wrong: {e} -- please try again.")
