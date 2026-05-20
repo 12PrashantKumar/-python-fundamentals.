@@ -1,5 +1,9 @@
 __pycache__/
 chat_log*.json
+chat_history*.json
+chat_history2*.json
+chat_snapshot_20260520_160732*.json
+
 *.pyc
 *.pyo
 .env
